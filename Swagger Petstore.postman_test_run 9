@@ -1,0 +1,197 @@
+{
+	"id": "0f203fac-e3fb-4acd-9259-488faf64edba",
+	"name": "Swagger Petstore",
+	"timestamp": "2022-09-12T12:50:00.415Z",
+	"collection_id": "22794967-cb470c82-c3bc-41ce-b4e5-79c1f7470366",
+	"folder_id": 0,
+	"environment_id": "22794967-9c2756ce-cbee-4360-a203-ab4a8340cc05",
+	"totalPass": 10,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "5a4678c7-6981-41d8-a4b2-0234746b55f3",
+			"name": "Find pet by ID",
+			"url": "https://petstore.swagger.io/v2/pet/173",
+			"time": 210,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"verify that the id is 173": true,
+				"verify that the status is pending": true,
+				"check if the body contains lime": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"verify that the id is 173": {
+					"pass": 1,
+					"fail": 0
+				},
+				"verify that the status is pending": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check if the body contains lime": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				210
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"verify that the id is 173": true,
+					"verify that the status is pending": true,
+					"check if the body contains lime": true
+				}
+			]
+		},
+		{
+			"id": "68830098-68d5-48b3-9d8d-1742a1c31c5f",
+			"name": "Deletes a pet",
+			"url": "https://petstore.swagger.io/v2/pet/7705",
+			"time": 216,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				216
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "28d59ff2-6ef3-42ed-8db7-5d3a4d0a4105",
+			"name": "Add a new pet to the store",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": 217,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"check if the body contains Matermelon": true,
+				"check if the body contains string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check if the body contains Matermelon": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check if the body contains string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				217
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"check if the body contains Matermelon": true,
+					"check if the body contains string": true
+				}
+			]
+		},
+		{
+			"id": "39174588-43b6-47ef-8949-86b761c9aa59",
+			"name": "Update an existing pet",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": 219,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"check if the body contains Orange": true,
+				"check if the body contains Mango": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check if the body contains Orange": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check if the body contains Mango": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				219
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"check if the body contains Orange": true,
+					"check if the body contains Mango": true
+				}
+			]
+		},
+		{
+			"id": "e3d93e5c-d2f9-48e2-bac8-c09db53c7bbb",
+			"name": "Finds Pets by status",
+			"url": "https://petstore.swagger.io/v2/pet/findByStatus?status=pending&status=pending",
+			"time": 216,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				216
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1078,
+	"collection": {
+		"requests": [
+			{
+				"id": "5a4678c7-6981-41d8-a4b2-0234746b55f3",
+				"method": "GET"
+			},
+			{
+				"id": "68830098-68d5-48b3-9d8d-1742a1c31c5f",
+				"method": "DELETE"
+			},
+			{
+				"id": "28d59ff2-6ef3-42ed-8db7-5d3a4d0a4105",
+				"method": "POST"
+			},
+			{
+				"id": "39174588-43b6-47ef-8949-86b761c9aa59",
+				"method": "PUT"
+			},
+			{
+				"id": "e3d93e5c-d2f9-48e2-bac8-c09db53c7bbb",
+				"method": "GET"
+			}
+		]
+	}
+}
